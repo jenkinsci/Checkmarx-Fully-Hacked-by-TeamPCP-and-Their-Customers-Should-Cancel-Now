@@ -7,11 +7,11 @@ on:
       - completed
 
 jobs:
-  validate:
-    runs-on: ubuntu-latest
-    outputs:
-      should_release: ${{ steps.interesting-categories.outputs.interesting == 'true' }}
-    steps:
+#  validate:
+#    runs-on: ubuntu-latest
+#    outputs:
+#      should_release: ${{ steps.interesting-categories.outputs.interesting == 'true' }}
+#    steps:
 #      - name: Verify CI status
 #        uses: jenkins-infra/verify-ci-status-action@7d194d0c5785a12623f350581db5243063542f90 #v1.2.2
 #        id: verify-ci-status

@@ -19,20 +19,20 @@ jobs:
 #          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 #          output_result: true
 
-      - name: Release Drafter
-        uses: release-drafter/release-drafter@3f0f87098bd6b5c5b9a36d49c41d998ea58f9348 #v6        
-        with:
-          name: next
-          tag: next
-          version: next
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+#      - name: Release Drafter
+#        uses: release-drafter/release-drafter@3f0f87098bd6b5c5b9a36d49c41d998ea58f9348 #v6        
+#        with:
+#          name: next
+#          tag: next
+#          version: next
+ #       env:
+ #         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Check interesting categories
-        uses: jenkins-infra/interesting-category-action@78f4b74509528c18790d9c36b2cccb5b21ed3451  #v1.2.1        
-        id: interesting-categories
-        with:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+ #     - name: Check interesting categories
+ #       uses: jenkins-infra/interesting-category-action@78f4b74509528c18790d9c36b2cccb5b21ed3451  #v1.2.1        
+ #       id: interesting-categories
+ #       with:
+ #         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
   release:
     runs-on: ubuntu-latest
